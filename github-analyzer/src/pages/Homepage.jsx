@@ -24,7 +24,8 @@ export default function Homepage(){
 
         const timer = setTimeout(() =>{
             if(username){handleSearch();}
-        },1500)
+            else setResult([]);
+        },1000)
 
         return () => clearTimeout(timer);
 

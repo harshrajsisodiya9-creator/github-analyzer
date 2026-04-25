@@ -6,7 +6,7 @@ const UserCard = ({ title, avatar}) => {
     const navigate = useNavigate();
 
     return (
-        <div onClick={() => navigate(`./profile/${title}`)}>
+        <div onClick={() => navigate(`/profile/${title}`)}>
             <img src={avatar}
                 alt={`error loading ${title} avatar`}
             ></img>
