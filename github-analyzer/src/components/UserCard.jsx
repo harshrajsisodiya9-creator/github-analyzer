@@ -1,4 +1,5 @@
 import { useNavigate} from "react-router-dom";
+import styles from './Card.module.css';
 
 
 const UserCard = ({ title, avatar}) => {
@@ -6,7 +7,7 @@ const UserCard = ({ title, avatar}) => {
     const navigate = useNavigate();
 
     return (
-        <div onClick={() => navigate(`/profile/${title}`)}>
+        <div onClick={() => navigate(`/profile/${title}`)} className={styles.card}>
             <img src={avatar}
                 alt={`error loading ${title} avatar`}
             ></img>
